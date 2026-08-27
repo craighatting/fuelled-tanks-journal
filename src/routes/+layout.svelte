@@ -1,18 +1,20 @@
 <script lang="ts">
 	import '../app.css';
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 
 	let { children } = $props();
 
 	const navItems = [
-		{ href: '/', label: 'Home', match: '/', exact: true },
-		{ href: '/series', label: 'Series', match: '/series' },
-		{ href: '/journal', label: 'Journal', match: '/journal', exact: true },
-		{ href: '/journal/report', label: 'Report', match: '/journal/report' }
+		{ href: `${base}/`, key: '/', label: 'Home', match: '/', exact: true },
+		{ href: `${base}/series`, key: '/series', label: 'Series', match: '/series' },
+		{ href: `${base}/journal`, key: '/journal', label: 'Journal', match: '/journal', exact: true },
+		{ href: `${base}/journal/report`, key: '/journal/report', label: 'Report', match: '/journal/report' }
 	];
 
 	function isActive(item: (typeof navItems)[number]): boolean {
-		return item.exact ? $page.url.pathname === item.match : $page.url.pathname.startsWith(item.match);
+		const path = $page.url.pathname.slice(base.length) || '/';
+		return item.exact ? path === item.match : path.startsWith(item.match);
 	}
 
 	const ICONS: Record<string, string> = {
@@ -32,7 +34,7 @@
 
 <div class="flex min-h-screen flex-col bg-surface-dim">
 	<header class="sticky top-0 z-30 border-b border-border bg-surface px-4 py-3">
-		<a href="/" class="flex items-center gap-2.5">
+		<a href="{base}/" class="flex items-center gap-2.5">
 			<div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary text-white text-sm font-bold">
 				F
 			</div>
@@ -52,7 +54,7 @@
 					? 'text-primary'
 					: 'text-on-surface-muted'}"
 			>
-				<span class="h-6 w-6">{@html ICONS[item.href]}</span>
+				<span class="h-6 w-6">{@html ICONS[item.key]}</span>
 				{item.label}
 			</a>
 		{/each}

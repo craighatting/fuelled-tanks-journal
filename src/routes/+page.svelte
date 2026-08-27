@@ -1,5 +1,6 @@
 <script lang="ts">
 	import TanksIllustration from '$lib/components/fuelled/TanksIllustration.svelte';
+	import { base } from '$app/paths';
 </script>
 
 <section class="text-center">
@@ -16,13 +17,13 @@
 
 <section class="mt-8 flex flex-col gap-3 sm:flex-row">
 	<a
-		href="/journal"
+		href="{base}/journal"
 		class="flex-1 rounded-xl bg-primary px-4 py-3 text-center text-sm font-semibold text-white shadow-sm transition hover:bg-primary-dark"
 	>
 		Start tonight's check-in
 	</a>
 	<a
-		href="/series"
+		href="{base}/series"
 		class="flex-1 rounded-xl border border-border-strong bg-surface px-4 py-3 text-center text-sm font-semibold text-on-surface transition hover:bg-surface-dim"
 	>
 		Watch the series

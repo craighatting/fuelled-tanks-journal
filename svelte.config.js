@@ -12,7 +12,11 @@ const config = {
 			fallback: undefined,
 			precompress: false,
 			strict: true
-		})
+		}),
+		paths: {
+			// Set to "/<repo-name>" when building for a GitHub Pages project site.
+			base: process.env.BASE_PATH ?? ''
+		}
 	}
 };
 
