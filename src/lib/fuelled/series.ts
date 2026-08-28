@@ -12,11 +12,12 @@ export interface SeriesPart {
 }
 
 /**
- * Parts 1-3 title/speaker are confirmed from CityHill Church's own series page
- * (found via search — cityhillchurch.tv itself wasn't fetchable from this
- * environment). Parts 4-6 are inferred by elimination (physical and spiritual
- * are already taken by parts 2-3, so 4-5 are most likely emotional/mental,
- * order unconfirmed) — replace with the real titles when you have them.
+ * Parts 1-4 are transcribed from the actual sermon audio (source transcripts
+ * supplied directly). Note this church's own word-to-tank mapping is not the
+ * naive Luke 10:27 reading — per the sermons themselves, "soul" (week 3) is
+ * the emotional tank and "heart" (week 4) is the spiritual tank, the reverse
+ * of what you'd assume. Parts 5-6 (mental tank, and the finale) are still
+ * placeholders — replace with the real titles/transcripts when available.
  */
 export const seriesParts: SeriesPart[] = [
 	{
@@ -24,7 +25,7 @@ export const seriesParts: SeriesPart[] = [
 		title: 'Life To The Full',
 		tank: 'Introduction',
 		description: 'The four tanks, the greatest commandment, and why we run out of fuel.',
-		speaker: 'Steve Wimble',
+		speaker: 'Steve Jacobs',
 		youtubeUrl: 'https://www.youtube.com/watch?v=2mDsQuFcuho',
 		confirmed: true,
 		transcript: [
@@ -110,23 +111,120 @@ export const seriesParts: SeriesPart[] = [
 		description: 'Loving God with all your strength — rest, food, and the body.',
 		speaker: 'Wayne Neuper',
 		youtubeUrl: 'https://www.youtube.com/watch?v=Jq5Ys0hZ5Dg',
-		confirmed: true
+		confirmed: true,
+		transcript: [
+			"It's wonderful to be back here again. The last time we were here was 2019 — a lot's happened since then, including two years of COVID, but our friendship has remained in place, and it's great to spend time together and to reconnect with people here we've grown to know.",
+
+			"This church has an amazing reputation, and it's been wonderful to observe from a distance all that God has been doing here — an inspiration to us in our building project, in the area of faith, and in being effective and personal while bringing a message that's relevant to people today. Thank you for the partnership we get to have across the miles.",
+
+			"We were raised in South Africa, lived there for thirty-five years, and we've now been living in Dresden, Germany, for nearly twenty-five years. We've had wonderful and challenging moments, but it's been God's plan for us. We have three children who are married and eight grandchildren — God has amazingly blessed us — and we get to come back here every now and again to reconnect with our African hearts.",
+
+			"My subject this morning is: give attention to your body tank. I've been inspired by this series, by the workbook, and by last week's message — and I think this is an important subject, because we're not just spiritual beings, we're physical beings too.",
+
+			"A 2019 global wellness survey rated South Africans as dangerously unhealthy — among the unhealthiest in the world — tracking things like unhealthy eating, disease rates and health spending. A more recent survey placed South Africa near the top of the list for unhealthy lifestyle factors: smoking, obesity, drinking, and physical inactivity. Taken together, the statistics say South Africans as a whole are not in a good place when it comes to health — which is surprising, because from the outside this looks like such a sport-loving nation.",
+
+			"Intuitively, most of us already know we need to give attention to our physical condition — just think about how many New Year's resolutions involve eating or exercise. The diet and fitness industries know exactly how we think, and thrive every January. We know something needs to change. Some of us justify neglecting our health — too busy to exercise, can't afford to eat well, or the idea that God is only interested in our spirit, not our body.",
+
+			"But here's a simple truth: every one of us has only been given one body. You don't get another one. So the only sensible conclusion is that I need to look after the one body I've been given — because if my physical tank ceases to exist, every other tank ceases to exist with it. Will you be there for your bucket list, to enjoy what you've built, to walk your daughter down the aisle, to be there for your grandkids?",
+
+			"Over a Christmas holiday, our grandchildren wanted to play hide-and-seek with us in a multi-storey indoor jungle gym — tunnels and all — and I was genuinely glad in that moment that I had good health, crawling around after them. You owe it to your family to look after your health. But God is interested in your physical health too — it matters to him.",
+
+			'1 Corinthians 6:19-20 says: "Do you not know that your bodies are temples of the Holy Spirit, who is in you, whom you have received from God? You are not your own; you were bought at a price. Therefore honour God with your bodies." That passage was written specifically about sexual immorality, but the principle extends further.',
+
+			"First: my body is a temple of the Holy Spirit. From the day you commit your life to Christ, the Holy Spirit comes to live in you — he looks after us, speaks to us, guides us — and our bodies become a dwelling place for him. So look after that body. Second: my body belongs to him. You were bought at a price — the highest price he could pay. That means you're not your own; you belong to him, and a culture that says \"my body is mine, I'll do with it whatever I want\" runs against what Scripture says here. What you think you own is really on loan to you.",
+
+			"Third: my task is to steward my body — it's been given to me on loan for my walk on this earth, and one day it will be changed into another body. Fourth: if we honour and look after this body, we honour God by stewarding it well. So — how well are you stewarding the body you've been given on loan by your Heavenly Father?",
+
+			"Some practical points. First, eat healthily — not just eat, eat healthily. My mother's generation ate to live; that's a different posture from working just so you can eat. Ecclesiastes 9:7 says: \"Go, eat your bread with joy and drink your wine with a merry heart, for God has already approved what you do.\" Eating together is a good and God-approved thing — think how often Jesus ate with people. The point isn't that eating is bad, it's eating healthily. As Hippocrates said, you are what you eat — the less processed your diet, the healthier you'll be. A simple set of tips: five different vegetables a day, more greens and less processed food, less red meat, cut sugary drinks (diet or not, they're all bad for you), take smaller portions, and slow down — chew properly and give yourself time to breathe between bites.",
+
+			"Second, exercise regularly — not just exercise, regularly. A large share of adults don't exercise at all. If it helps, make it an act of worship rather than a guilt response to what you ate yesterday — every time you move your body, it can be an attitude of gratitude that God gave you a body that can walk, that isn't confined to a wheelchair. Some people find that combining a walk with prayer helps them stick with it. Exercising with someone else adds accountability — you show up because someone's expecting you. And there's real science behind it too: exercise that raises your heart rate boosts a brain chemical (BDNF) that helps you think more clearly and lowers your risk of depression.",
+
+			"Third, rest intentionally. Some of us only rest because we collapse from exhaustion, rather than choosing it. Sleep is one of the greatest gifts of life — indispensable for recovering energy — and adults are generally recommended seven or more hours a night. Do it with intention, not as an afterthought.",
+
+			'Fourth, monitor your other tanks. Proverbs 17:22 says: "A cheerful heart is good medicine, but a crushed spirit dries up the bones." A cheerful heart has a genuinely good effect on your body; a crushed spirit — crushed emotions — has a bad one. Early in my career, during an intensely pressured season with almost no sleep, I developed chest pain so severe I thought I was having a heart attack. The doctor diagnosed a stress-related digestive condition — nothing physically wrong, just my mind\'s stress playing out in my body. I only had it once, because I learned the lesson: our emotional, mental and spiritual tanks affect our physical tank directly, so get them in order too.',
+
+			"One caution on balance: stewarding this body well doesn't mean making the body, sport or fitness into an idol. For me, running matters, but serving Jesus comes first — everything else, including training, submits to that. Choosing gratitude in a stressful moment can actually lower the stress hormone cortisol your body is pumping out, and release something better in its place.",
+
+			"I want to be gentle here — every situation is different, and I'm not walking in your shoes or living with your health issues. But every one of us is responsible for our own life, and when we want to honour God, one way we do that is by looking after the body he's given us. What's your next step this week?",
+
+			'Closing prayer: "Thank you for your incredible grace to us, Lord Jesus. Thank you for this body you\'ve given me, and for all that it does and is able to do — the way it recovers, day after day. I ask for your wisdom, that you\'d help me know the next step so I can honour you with my body — for some of us that\'s eating, for some it\'s exercise — so that we can live an abundant life, because you are with us and helping us. We praise you in Jesus\' name."',
+
+			'[Transcript cuts off here — the source recording exceeds the free transcription length available.]'
+		]
 	},
 	{
 		number: 3,
 		title: 'Love The Lord With All Your Soul',
-		tank: 'Spiritual',
-		description: 'The cornerstone tank — our connection with God.',
+		tank: 'Emotional',
+		description: 'Loving God with all your soul — feeling and processing well.',
+		speaker: 'Steve Jacobs',
 		youtubeUrl: 'https://www.youtube.com/watch?v=xowWS4-DB5w',
-		confirmed: true
+		confirmed: true,
+		transcript: [
+			"Good morning, everybody. Before diving into the message — wasn't it wonderful to celebrate all the water baptisms in this service? You'll have noticed a number of children baptised too — when it comes to children, we leave that decision with the parents, and we'd suggest waiting until a child is old enough to remember it themselves, since Ephesians 4 speaks of one baptism, one they need to be able to remember for the rest of their lives.",
+
+			"We're in week three of our Fuelled series. Today's title is: love the Lord with all your soul. Our key verse for the series is Luke 10:27 — love the Lord your God with all your heart, with all your soul, with all your strength, and with all your mind. Last week we looked at strength, our physical body; this week we're dealing with the second tank, our emotional energy — soul.",
+
+			"Those four words — heart, soul, strength, mind — roughly equate to our four internal tanks: emotional, spiritual, physical and mental. The metaphor of the whole series is that in each of these tanks we're trying to live in the healthy zone, the top third — not from a selfish motive, but so we can love God fully and live out the life he has for us. Drop into the middle third and we're in a danger zone; drop into the bottom third — a burnout zone I spent years in myself and never want to return to — and that's not how we were designed to live.",
+
+			"This emotional tank was the one I was weakest in, by a long shot, when I began my own journey back to full health — so maybe for you it's a different tank that needs the most work, but we're asking God to help us learn and grow as we go. The basic maths of this whole series is simple: if your inflow is greater than your outflow over time, you end up in the healthy zone; if your outflow outpaces your inflow, even by a small amount consistently, you end up depleted, little by little, without quite noticing how you got there. This is a message of hope — we don't have to live in the middle or the bottom of these tanks.",
+
+			"Let's talk about our feelings today. Picture a continuum with two ends. On one end, feelings equal everything — say exactly what you're feeling, right now, live your authentic life, don't let anyone limit you. On the other end, feelings equal nothing — bottle it all in, don't let anyone know how you're feeling, play your cards close to your chest; borrowing a word from the Greek Stoics, who suppressed all emotion and showed no pain. Each end is critical of the other — too harsh and uncaring, or too emotional — and both have a point. We're not designed to live at either extreme, but somewhere in the healthy middle.",
+
+			"Does the Bible tell us how Jesus expressed and processed his own emotion? It does. In John 11, when Jesus sees Mary weeping over the death of her brother Lazarus, along with those mourning with her, it says he was deeply moved in spirit and troubled — and then, simply, \"Jesus wept.\" What makes that even more remarkable is that within the hour he was about to raise Lazarus back to life — he already knew that was coming, and he still felt and expressed the emotion of the moment with that grieving family. On the other end, Luke 10:21 says Jesus was \"full of joy through the Holy Spirit\" — a joy that was visibly expressed, or his disciples wouldn't have known to write it down.",
+
+			"So, two things: emotions are a gift from God. They don't always feel like a gift — the stronger negative ones can feel overwhelming — but God designed even the hardest emotions as a gift, so we can experience and process life fully and deeply. And, emotions are a gift, but they shouldn't govern our world. We see that clearly in Gethsemane, where Jesus was \"sorrowful, even to the point of death,\" and prayed, \"My Father, if it is possible, may this cup be taken from me.\" For so many of us, that's the whole prayer — but Jesus goes on: \"yet not as I will, but as you will.\" He expressed his real, authentic emotion, without letting it dictate his direction — otherwise he'd never have gone to the cross.",
+
+			"Learning to understand and properly manage my own emotional tank has been one of the biggest growth journeys of my adult life. Around age twelve or thirteen, during a season when my mum went through serious health issues and I was sent away to boarding school, separated from family and friends at a vulnerable age, I made a subconscious decision that emotions were dangerous — that showing too much of what I felt made me vulnerable — so I veered hard toward suppressing everything. It didn't serve me well. Break the word \"disease\" in two and you get \"dis-ease,\" and when we don't have language for what's going on in our emotional tank, we can start to believe that dis-ease is just normal, when it isn't.",
+
+			"Three questions have been huge for me personally in learning to engage with my emotions honestly, without letting them run my life. Number one: what am I really feeling? Most of us have a pretty limited emotional vocabulary, but if I can name a feeling, I can generally process it — as in Psalm 55: \"my thoughts trouble me, I am distraught.\" With our own boys, when they were young, we downloaded a printed \"wheel of emotions\" and asked them to stand in front of it and pick two words describing their day — a small, fun way to normalise the language of emotion in our family, since Jax was good at it and I really wasn't, growing up the way I did.",
+
+			"Number two: why am I feeling like this? Psalm 42 has the writer asking his own soul, \"why are you downcast?\" Most big feelings have triggers, and the triggers are often small even when the impact is big. I can think of coming home after a couple of stressful days and reacting to something one of our sons hadn't done quite right with far more intensity than the situation actually called for — and, on that occasion, having the grace afterward to go back and say, \"I'm sorry for how I came across — the problem's still the problem, but I should have dialled it down a notch, could we reset that conversation?\" Understanding my own triggers changes how I read other people's big reactions too — there's usually something else going on underneath that I can't see, and it isn't always about me.",
+
+			"It's also worth remembering: my feelings are real, but not always reliable. I've had an hour or two of feeling quite discouraged, gone to bed, woken up the next morning thinking about exactly the same circumstances, and suddenly the world looked a lot brighter — the feelings had changed even though nothing else had. Elijah, in one low moment, tells God he's the only faithful person left in the whole country; God's answer is simply, no you aren't — there are at least four hundred more. A real feeling isn't necessarily a fact.",
+
+			"Which brings me to the third question: what am I going to do with these feelings? Every one of us has natural, habitual ways of dealing with our strongest emotions, built up over a lifetime, and not all of them are healthy — the Stoics bury and suppress, the other extreme just expresses everything immediately, and neither is that healthy. Two better options, to close with: pray them, and process them fully. The Psalms — the Bible's longest book — model this constantly: real emotional honesty poured out to God, from gratitude to lament to even anger, expressed and then met with God's perspective and presence. Processing fully means not skirting the edge of the hard emotion looking for a shortcut around it — grief, for instance, is like a valley you have to walk into and through, in your own time, because there's fruit God grows in that valley that you'll never taste up on the rim. Psalm 23 promises: \"even though I walk through the darkest valley, I will fear no evil, for you are with me\" — not waiting on the far side, but present with us the whole way through.",
+
+			"So: emotions are a gift from God, but they're not meant to govern our lives. We process them well by asking what am I feeling, why am I feeling this way, and what am I going to do about it — praying them honestly to God, and processing them fully rather than shortcutting the valley. In closing, right where you're at this morning — what are you really feeling?",
+
+			'[Transcript cuts off here — the source recording exceeds the free transcription length available.]'
+		]
 	},
 	{
 		number: 4,
-		title: 'The Emotional Tank',
-		tank: 'Emotional',
-		description: 'Loving God with all your heart — feeling and processing well.',
+		title: 'Love The Lord With All Your Heart',
+		tank: 'Spiritual',
+		description: 'The cornerstone tank — our connection with God.',
+		speaker: 'Steve Jacobs',
 		youtubeUrl: 'https://www.youtube.com/watch?v=Ml5YC7g8wgQ',
-		confirmed: false
+		confirmed: true,
+		transcript: [
+			"Good morning, everybody. We're in week four of our Fuelled series. I'd like to echo the welcome from earlier — welcome to everyone watching online too. Before diving in, thank you to everyone who's given feedback on the series so far — one lady from this church and a colleague, who also attends here, approached their employer for permission to run a Fuelled group at work, and nine people have joined so far who've never been to this church. I've heard several other stories of people stepping out to start or lead groups in different places — well done, and thank you to everyone involved.",
+
+			"Our title today is: love the Lord with all your heart. That's from Luke 10:27, our text for this series — love the Lord your God with all your heart, with all your soul, with all your strength, and with all your mind. Those four words roughly correlate to our four internal tanks of physical, emotional, spiritual and mental energy. We've covered the physical and emotional tanks over the last two weeks; today it's spiritual energy — love the Lord your God with all of your heart.",
+
+			"One comment on the tanks picture we've been using: these four tanks aren't separate from each other — they're bolted together on the inside of us, connected by a kind of pipe. Something good in the emotional space benefits the body; something good in the spiritual space benefits the body, the emotions and the mind too. Our relationship with God is unique to each of us — you can talk about it, but the Bible has this line: \"taste and see that the Lord is good.\" Talking about a relationship with God is one thing; tasting and seeing it for yourself is another, and that's the invitation to all of us, to fill up the spiritual energy tank God has given us.",
+
+			"My key text this morning is John 15:5, where Jesus says: \"I am the vine, you are the branches. If you remain in me and I in you, you will bear much fruit; apart from me you can do nothing.\" Jesus is speaking to people who understood agriculture deeply, and uses this picture from nature to describe how essential our spiritual connection to him is. I'd like to take three phrases from that verse.",
+
+			"First: I am the vine, you are the branches. Take away a branch and a tree keeps growing; take away the trunk and the root system, and you don't have a tree at all. The trunk and roots provide nutrients, water, support and strength to the branches as they blow in the wind — Jesus is telling us he's the main one, the source of spiritual life to every one of us branches, providing the life-giving supply and the strength to hold on as we blow in the wind of day-to-day life. So here's the honest question: do you and I really see our relationship with him that way — him as the trunk, me as the branch — or do I quietly see myself as the main one, and just ask him to send the rain now and then?",
+
+			"Second: apart from me, you can do nothing. That's a strange claim, on the surface — plenty of people who don't believe in Jesus do a lot of good in the world. But apart from Christ, I can do nothing of eternal value — only things that last within this life. Later in the same passage Jesus says he's appointed every follower to bear fruit that lasts for eternity, and the only way to do that is by staying connected to the vine, finding purpose and life-giving supply from him. Saw a branch off the edge of a tree and it dies long before the trunk does — and yet so many of us believe we don't need to stay connected to Jesus to find purpose and well-being in life.",
+
+			"Third: you will bear much fruit — and the purpose of fruit isn't for the tree or the branch, it's for others. In Galatians 5, Paul lists the fruit that should be hanging off our branches: love, joy, peace, patience, kindness, goodness, faithfulness, gentleness and self-control. A good exercise this week is to picture those nine as fruit hanging on the branches of your life and ask honestly — is that fruit increasing? For some of us it's grown over the last five years; for some of us it's diminished a little. The solution isn't to work harder at it — it's to get more connected to him, because he says if we remain in him, we'll bear that fruit.",
+
+			"So practically — what keeps this tank fuelled, keeps us connected to the vine? Number one: obeying him. Later in this same teaching Jesus says, \"If you keep my commands, you will remain in my love.\" The number one sign the Bible gives of our connection to him is our obedience to him. When we read something in the Bible where God is clear about what we need to do, are we obeying it — or treating it as a general suggestion, take it or leave it?",
+
+			"Number two: time alone with him. Every worthwhile relationship in life requires time to grow, or even just to be maintained — that's true in marriage, and it's true here. \"I don't have time\" is an excuse I've used and heard often, and I'd suggest two answers to it. First: everything busy in my life, I chose to do — shifting the language from \"I have to\" to \"I chose to\" changes how I see it. Second: we find time for what's genuinely important to us — imagine being offered a million dollars for completing a physical challenge in six months; most of us would suddenly find the time to train for it. Reading his word, talking to him in prayer, and listening for his encouragement are three simple ways to spend that time. A simple Bible reading plan — three bookmarks, one each in the Old Testament, the Psalms, and the New Testament, moved forward a little each day — will take you through the whole Bible in a year or two. No prizes for speed, but a huge reward for consistency.",
+
+			"Number three: time with his community. I once received an email from someone in a genuine, growing relationship with God through daily Bible reading and prayer, but struggling to find a church he connected with in his city, and asking whether in-person community really mattered that much. Hebrews says: \"let us consider how we may spur one another on toward love and good deeds, not giving up meeting together, as some are in the habit of doing.\" Acts 2 says the believers devoted themselves to fellowship. It's possible to have a relationship with the vine on your own — that's the starting point — but if you're connected to the vine, you'll be connected to a lot of other branches too, because that's how God designed it.",
+
+			"Our posture when we connect with community matters enormously. Some people arrive leaning forward, looking for connection, and they tend to find it; others arrive with a posture of \"entertain me\" — and in the very same month, at the very same church, I'll hear one person say this is the friendliest place they've ever found and they feel like they've found family, and another say it felt cliquey and unfriendly. We tend to get back the kind of energy we give off. There's an old story of a preacher visiting a man living alone in the woods, who says the church is full of hypocrites and he's better off by himself; the preacher removes a single burning log from the fire and sets it alone on the hearth. By the time they finish talking, that log has gone cold while the rest of the fire still roars — we need community to help the fire keep burning, because God works through the people around us.",
+
+			"To recap: John 15:5 — I am the vine, you are the branches; remain in me and you'll bear much fruit, apart from me you can do nothing. We keep this spiritual tank strong through obedience, through time alone with him, and through time with his community.",
+
+			'[Transcript cuts off here — the source recording exceeds the free transcription length available.]'
+		]
 	},
 	{
 		number: 5,

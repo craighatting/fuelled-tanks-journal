@@ -52,7 +52,7 @@
 		When Jesus was asked for the greatest commandment, He quoted Moses' words from
 		Deuteronomy — and added one thing: <span class="font-medium text-on-surface">mind</span>.
 		Heart, soul, strength and mind map onto four tanks inside us that need looking after:
-		<span class="font-medium text-on-surface">emotional, spiritual, physical and mental</span>.
+		<span class="font-medium text-on-surface">spiritual, emotional, physical and mental</span>.
 		Each tank has an inflow and an outflow — some things fill it, other things drain it — and
 		they're designed to be used, not wrapped in cotton wool.
 	</p>
