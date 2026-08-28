@@ -85,10 +85,8 @@
 			<div class="flex flex-1 flex-col items-center gap-1">
 				<div class="flex h-8 w-full overflow-hidden rounded" class:opacity-30={!day.levels}>
 					{#each TANKS as tank}
-						<div
-							class="flex-1"
-							style="background:{day.levels ? zoneColors[zoneForLevel(day.levels[tank])] : 'var(--color-border)'}"
-						></div>
+						{@const zone = day.levels ? zoneForLevel(day.levels[tank]) : null}
+						<div class="flex-1" style="background:{zone ? zoneColors[zone] : 'var(--color-border)'}"></div>
 					{/each}
 				</div>
 				<span class="text-[10px] text-on-surface-muted">{formatDateLabel(day.date).slice(0, 3)}</span>

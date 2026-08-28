@@ -108,10 +108,10 @@
 						{@const entry = report.entriesByDate[date]}
 						{@const level = entry?.levels[tank]}
 						<div class="flex flex-1 flex-col items-center justify-end gap-1" style="height: 100%">
-							{#if level !== undefined}
+							{#if level !== undefined && level !== null}
 								<div
 									class="w-full rounded-sm"
-									style="height: {Math.max(level, 6)}%; background:{zoneColors[zoneForLevel(level)]}"
+									style="height: {Math.max(level, 6)}%; background:{zoneColors[zoneForLevel(level)!]}"
 								></div>
 							{:else}
 								<div class="h-1 w-full rounded-sm bg-border"></div>

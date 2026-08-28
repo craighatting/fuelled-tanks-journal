@@ -4,7 +4,7 @@
 
 	let { label, level, onSelect }: {
 		label: string;
-		level: number;
+		level: number | null;
 		onSelect: (level: number) => void;
 	} = $props();
 

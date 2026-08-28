@@ -39,7 +39,7 @@ export interface TankNote {
 
 export interface JournalEntry {
 	date: string; // YYYY-MM-DD, local
-	levels: Record<Tank, number>; // 0-100
+	levels: Record<Tank, number | null>; // 0-100, or null if not yet picked
 	filled: TankNote[];
 	drained: TankNote[];
 	updatedAt: string; // ISO timestamp
@@ -89,7 +89,7 @@ export function formatDateLabel(dateKey: string): string {
 export function emptyEntry(date: string): JournalEntry {
 	return {
 		date,
-		levels: { spiritual: 50, emotional: 50, mental: 50, physical: 50 },
+		levels: { spiritual: null, emotional: null, mental: null, physical: null },
 		filled: [],
 		drained: [],
 		updatedAt: new Date().toISOString()
@@ -110,7 +110,8 @@ export function listEntries(): JournalEntry[] {
 	return Object.values(readAll()).sort((a, b) => a.date.localeCompare(b.date));
 }
 
-export function zoneForLevel(level: number): Zone {
+export function zoneForLevel(level: number | null): Zone | null {
+	if (level === null) return null;
 	if (level >= 67) return 'healthy';
 	if (level >= 34) return 'danger';
 	return 'burnout';
@@ -193,9 +194,11 @@ export function summarizeWeek(dates: string[], allEntries: JournalEntry[]): Week
 
 	const tanks = {} as Record<Tank, TankWeekSummary>;
 	for (const tank of TANKS) {
-		const levels = weekEntries.map((e) => e.levels[tank]);
+		const levels = weekEntries
+			.map((e) => e.levels[tank])
+			.filter((l): l is number => l !== null);
 		const zoneDays: Record<Zone, number> = { healthy: 0, danger: 0, burnout: 0 };
-		for (const level of levels) zoneDays[zoneForLevel(level)]++;
+		for (const level of levels) zoneDays[zoneForLevel(level)!]++;
 		tanks[tank] = {
 			tank,
 			average: levels.length ? levels.reduce((a, b) => a + b, 0) / levels.length : null,
