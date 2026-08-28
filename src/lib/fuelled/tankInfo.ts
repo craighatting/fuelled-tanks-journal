@@ -7,43 +7,43 @@ export interface TankInfo {
 
 export const TANK_INFO: Record<Tank, TankInfo> = {
 	spiritual: {
-		summary: 'Your connection with God — the cornerstone tank. The others can run on empty fumes without it, but not for long.',
+		summary: 'Your connection with God — described in the series as a vine and branches: He\'s the source, we\'re the branches, and apart from Him we can\'t bear lasting fruit.',
 		considerations: [
-			'Prayer — are you actually talking with God, or just about Him?',
-			'Scripture — reading it to hear from Him, not just to tick a box',
-			'Worship — times you\'ve stopped to notice who God is',
-			'Quiet — unhurried space where you can actually listen',
-			'Obedience — the small, unglamorous steps of following through on what He\'s said'
+			'Obedience — the number one sign of real connection, not just a suggestion to take or leave',
+			'Time alone with Him — His word, prayer, and actually listening, not just talking',
+			'Time with His community — a relationship with the vine that isn\'t connected to any other branches doesn\'t match how it was designed',
+			'Fruit — is love, joy, peace, patience and the rest actually increasing in your life, or fading?',
+			'Posture — do you arrive at church or community leaning in, or waiting to be entertained?'
 		]
 	},
 	emotional: {
-		summary: 'How you feel, and how well you notice, name and process it — separate from what you think.',
+		summary: 'A gift from God, not something to suppress or let run the show — three honest questions get you most of the way to processing it well.',
 		considerations: [
-			'Are you naming what you feel, or pushing it down?',
-			'Grief and loss you haven\'t fully sat with',
-			'Relationships where you feel truly known',
-			'Joy, gratitude and things worth celebrating',
-			'Whether you\'re reacting more strongly than the moment calls for'
+			'What am I really feeling? — naming it is most of the way to processing it',
+			'Why am I feeling like this? — most big reactions have a trigger smaller than the reaction itself',
+			'What am I going to do with it? — pray it honestly, and process it fully rather than shortcutting the hard parts',
+			'Remember your feelings are real, but not always reliable — a full night\'s sleep can change how something looks',
+			'Grief is a valley to walk through, not skirt around — there\'s fruit in it you won\'t find on the rim'
 		]
 	},
 	mental: {
-		summary: 'The thoughts running in your head — your self-talk, your focus, and what you let take up space there.',
+		summary: 'The thoughts running in your head — the series frames this in three moves: transform your thinking, take captive what shouldn\'t be there, and train your mind toward what\'s good.',
 		considerations: [
-			'What your inner dialogue sounds like on a hard day',
-			'What you\'re reading, watching and listening to',
-			'Decision fatigue — how many small calls you\'re making without a break',
-			'Worry or rumination vs. genuine mental rest',
-			'Whether you can concentrate, or your mind feels scattered'
+			'Transform — not a small tweak but real renewal (Romans 12:2), starting with acknowledging you need it',
+			'Take captive — you have the authority to stop a stray thought before it gains momentum (2 Corinthians 10:5)',
+			'Train — deliberately focus on what\'s true, noble, right, pure and praiseworthy (Philippians 4:8)',
+			'Watch the three triggers — exhaustion, who you spend time with, and poor inputs (what you read, watch, scroll)',
+			'New thought patterns feel effortful at first — like cutting a new path — until they become the default'
 		]
 	},
 	physical: {
-		summary: 'Your body — sleep, food, movement and pace. The easiest tank to notice, and the easiest to ignore anyway.',
+		summary: 'Your body — on loan to you, a temple of the Holy Spirit, and the one tank that takes every other tank down with it if it fails.',
 		considerations: [
-			'Sleep — enough of it, and good quality',
-			'Food and water — not just enough, but the right kind',
-			'Movement — some form of it, regularly',
-			'Pace — are you sprinting through weeks with no real rest?',
-			'Physical symptoms — tension, fatigue, or pain that might be a signal'
+			'Eat healthily — not just eat; less processed, smaller portions, actually enjoyed',
+			'Exercise regularly — not a guilt response, an act of gratitude for a body that can move',
+			'Rest intentionally — sleep is one of the greatest gifts of life, not an afterthought',
+			'Monitor your other tanks — a crushed spirit really does show up in the body',
+			'Steward it, don\'t idolise it — your body serves your purpose, it isn\'t the purpose'
 		]
 	}
 };
