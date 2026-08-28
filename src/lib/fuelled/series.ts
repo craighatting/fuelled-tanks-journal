@@ -7,6 +7,8 @@ export interface SeriesPart {
 	youtubeUrl: string;
 	/** Title/tank confirmed against a real source vs. inferred — flag it in the UI so it's easy to spot and fix. */
 	confirmed: boolean;
+	/** Cleaned-up transcript paragraphs, if one has been added for this part. */
+	transcript?: string[];
 }
 
 /**

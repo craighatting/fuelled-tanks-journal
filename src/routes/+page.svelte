@@ -1,6 +1,8 @@
 <script lang="ts">
 	import TanksIllustration from '$lib/components/fuelled/TanksIllustration.svelte';
 	import { base } from '$app/paths';
+	import { TANKS, TANK_LABELS } from '$lib/fuelled/journal';
+	import { TANK_INFO } from '$lib/fuelled/tankInfo';
 </script>
 
 <section class="text-center">
@@ -54,6 +56,30 @@
 		Each tank has an inflow and an outflow — some things fill it, other things drain it — and
 		they're designed to be used, not wrapped in cotton wool.
 	</p>
+</section>
+
+<section class="mt-8 grid gap-2">
+	<h2 class="mb-1 text-sm font-semibold uppercase tracking-wide text-primary">What's in each tank?</h2>
+	{#each TANKS as tank}
+		<details class="group rounded-xl border border-border bg-surface p-4 open:pb-5">
+			<summary class="flex cursor-pointer list-none items-center justify-between font-semibold text-on-surface">
+				{TANK_LABELS[tank]}
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0 text-on-surface-muted transition group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+				</svg>
+			</summary>
+			<p class="mt-2 text-sm text-on-surface-muted">{TANK_INFO[tank].summary}</p>
+			<p class="mt-3 text-xs font-semibold uppercase tracking-wide text-on-surface-muted">Things to think about</p>
+			<ul class="mt-1.5 flex flex-col gap-1 text-sm text-on-surface">
+				{#each TANK_INFO[tank].considerations as item}
+					<li class="flex gap-2">
+						<span class="text-primary">·</span>
+						<span>{item}</span>
+					</li>
+				{/each}
+			</ul>
+		</details>
+	{/each}
 </section>
 
 <section class="mt-8 grid gap-3">
